@@ -9,6 +9,17 @@ class Player(CircleShape):
         self.y = y
         self.rotation = 0
 
+        '''
+        # BOOTS recommended this code
+        self.image = pygame.Surface((30,30))
+        self.image.fill((255, 0, 0))
+
+        self.rect = self.image.get_rect()
+        self.rect.center = (x, y)
+        # END BOOTS code
+        '''
+
+
     # in the player class
     def triangle(self):
         forward = pygame.Vector2(0, 1).rotate(self.rotation)
